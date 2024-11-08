@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import CounterApp from './CounterApp';
+import '/styles.css' // Asegúrate de que la ruta sea correcta
 
-import  {App} from './app'
-
-
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>)
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <CounterApp value={1} />
+    </React.StrictMode>
+);
